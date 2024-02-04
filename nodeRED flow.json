@@ -1,0 +1,1196 @@
+[
+    {
+        "id": "66edd326e73c8ace",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f96d3c1ef14014a8",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "1fe1c9e0a6a28436",
+        "type": "group",
+        "z": "66edd326e73c8ace",
+        "name": "ESP32 CAM",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "94b93b72e99fda53",
+            "595ed0ecf9f52a0c",
+            "7c113c8ecfa09bc5",
+            "187a03193bff9acd",
+            "f5c6fba64dd6dd24",
+            "5255418265539ade",
+            "90d2c579c928fe39"
+        ],
+        "x": 34,
+        "y": 539,
+        "w": 712,
+        "h": 142
+    },
+    {
+        "id": "bd74124768224928",
+        "type": "group",
+        "z": "66edd326e73c8ace",
+        "name": "MQTT Test",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2e3045d744f255ee",
+            "f0db43bbfcb2bc11",
+            "f1d24be5791d7f49",
+            "2cdd0b574088bb5b"
+        ],
+        "x": 34,
+        "y": 179,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "2fd923550de11b42",
+        "type": "group",
+        "z": "66edd326e73c8ace",
+        "name": "Servo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0507d53fc21a7fcf",
+            "b377c2f7508c919a",
+            "a17b0960d22265cb",
+            "ae14f4ed46d9ce67",
+            "c3b2feedea2f72bd",
+            "c3a58373abd4c7a2",
+            "75212b47caa3b373",
+            "f7579b4dc4cf9038"
+        ],
+        "x": 34,
+        "y": 299,
+        "w": 572,
+        "h": 222
+    },
+    {
+        "id": "4f2d326610e85794",
+        "type": "group",
+        "z": "66edd326e73c8ace",
+        "name": "API Plate Recognizer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0fe8fd4978e1c24f",
+            "5dfd476b5993362e"
+        ],
+        "x": 774,
+        "y": 579,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "b2639379eac6ad57",
+        "type": "mqtt-broker",
+        "name": "ESP32CAM",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "961121839c78a20c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "97c58ca257cdf9de",
+        "type": "mqtt-broker",
+        "name": "ESP32",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "esp32/door/status",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "661f2119c21662a0",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "7dj2t4d8woeiyy4siqr41czp6ac8pw8tw0wb8rw3i47tq5j92cumuzzyan450ej3",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "94a1501f260f54e7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": "Master Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "true",
+            "allowTempTheme": "none",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "632f8c33.b2a4f4",
+        "type": "ui_tab",
+        "name": "Master Dashboard",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34fee9ad31999730",
+        "type": "MySQLdatabase",
+        "name": "db mysql",
+        "host": "localhost",
+        "port": "3306",
+        "db": "db_monitoring",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "2a745e6b.07df92",
+        "type": "ui_group",
+        "name": "ESP32 SERVO",
+        "tab": "632f8c33.b2a4f4",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "2ce8412d1753f8a8",
+        "type": "ui-theme",
+        "name": "Exit Servo",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "4910429b2310eb2c",
+        "type": "ui-base",
+        "name": "Entrance Servo",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false
+    },
+    {
+        "id": "10ef92b42f0e874f",
+        "type": "ui-theme",
+        "name": "Entrance Servo",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#00ff00",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "726901af26546899",
+        "type": "ui-base",
+        "name": "Servo Status",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false
+    },
+    {
+        "id": "f0832f6d960bf801",
+        "type": "ui-theme",
+        "name": "Servo Status",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#525252",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "d4c0e392bdd2dcbd",
+        "type": "ui_group",
+        "name": "ESP32 Camera",
+        "tab": "632f8c33.b2a4f4",
+        "order": 1,
+        "disp": true,
+        "width": 26,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "406201e0e9847c30",
+        "type": "ui_group",
+        "name": "Plate Recognizer",
+        "tab": "632f8c33.b2a4f4",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "849688597643d56e",
+        "type": "remote-config",
+        "name": "Node-RED UI PC",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "3z7c0kal055k0wvl3bracty3uqm855tob7vm49wyrco1i8ydblvfdf5gk94slksy",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "63f0e5029316c2ca",
+        "type": "function",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "Store and shift msg",
+        "func": "\n\n\n// initialise the counter to 0 if it doesn't exist already\nvar text = context.get('text')|| [];\n\ntext.push(msg);\nif (text.length > 5){\n    text.shift();\n    text.length = 5;\n} \n\n// store the value back\ncontext.set('text',text);\n// make it part of the outgoing msg object\nmsg = {};\nmsg.payload = text;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "d20c9ff0ec506be9"
+            ]
+        ]
+    },
+    {
+        "id": "64ef091b4e9ac682",
+        "type": "change",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "425612821",
+                "fromt": "str",
+                "to": "Agung Yamora Zubara Siregar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "63f0e5029316c2ca"
+            ]
+        ]
+    },
+    {
+        "id": "94b93b72e99fda53",
+        "type": "mqtt in",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "name": "PICTURE",
+        "topic": "PICTURE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b2639379eac6ad57",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "7c113c8ecfa09bc5"
+            ]
+        ]
+    },
+    {
+        "id": "595ed0ecf9f52a0c",
+        "type": "mqtt out",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "name": "Camera without Flash",
+        "topic": "SMILE",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b2639379eac6ad57",
+        "x": 460,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ba6afe7aad82c870",
+        "type": "file",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "Save Image",
+        "filename": "C:\\Users\\ASUS\\Documents\\ESP32CAM\\pic.png",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 750,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72463d2dc6a833fa",
+        "type": "file in",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "Image Read",
+        "filename": "C:\\Users\\ASUS\\Documents\\ESP32CAM/pic.png",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 590,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e3045d744f255ee",
+        "type": "inject",
+        "z": "66edd326e73c8ace",
+        "g": "bd74124768224928",
+        "name": "test topic mqtt",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "esp32/servoentrance",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "2cdd0b574088bb5b"
+            ]
+        ]
+    },
+    {
+        "id": "f0db43bbfcb2bc11",
+        "type": "debug",
+        "z": "66edd326e73c8ace",
+        "g": "bd74124768224928",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f1d24be5791d7f49",
+        "type": "mqtt in",
+        "z": "66edd326e73c8ace",
+        "g": "bd74124768224928",
+        "name": "test in",
+        "topic": "esp32/servoentrance",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b2639379eac6ad57",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "f0db43bbfcb2bc11"
+            ]
+        ]
+    },
+    {
+        "id": "2cdd0b574088bb5b",
+        "type": "mqtt out",
+        "z": "66edd326e73c8ace",
+        "g": "bd74124768224928",
+        "name": "test out",
+        "topic": "esp32/servoentrance",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b2639379eac6ad57",
+        "x": 360,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0507d53fc21a7fcf",
+        "type": "mqtt in",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "",
+        "topic": "esp32/servo1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "97c58ca257cdf9de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "75212b47caa3b373",
+                "c3b2feedea2f72bd",
+                "dfd668972df44c31"
+            ]
+        ]
+    },
+    {
+        "id": "b377c2f7508c919a",
+        "type": "mqtt in",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "",
+        "topic": "esp32/servo2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "97c58ca257cdf9de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "f7579b4dc4cf9038",
+                "c3a58373abd4c7a2",
+                "dfd668972df44c31"
+            ]
+        ]
+    },
+    {
+        "id": "891b67cabda73183",
+        "type": "esphome-in",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "",
+        "device": "",
+        "entity": "",
+        "bleaddress": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "704b4137a593c571",
+        "type": "esphome-out",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "device": "",
+        "entity": "",
+        "x": 260,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7c113c8ecfa09bc5",
+        "type": "image",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "name": "",
+        "width": "600",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "90d2c579c928fe39"
+            ]
+        ]
+    },
+    {
+        "id": "0fe8fd4978e1c24f",
+        "type": "plate-recognizer",
+        "z": "66edd326e73c8ace",
+        "g": "4f2d326610e85794",
+        "name": "",
+        "inputField": "payload",
+        "inputFieldType": "msg",
+        "outputField": "payload",
+        "outputFieldType": "msg",
+        "url": "https://api.platerecognizer.com/v1/plate-reader/",
+        "ignoreDuring": true,
+        "makeAndModel": false,
+        "statusText": "scores",
+        "cameraId": "",
+        "separateMsg": false,
+        "regionFilter": false,
+        "regionList": "[]",
+        "regionListType": "json",
+        "x": 880,
+        "y": 620,
+        "wires": [
+            [
+                "5dfd476b5993362e"
+            ],
+            [
+                "5dfd476b5993362e"
+            ]
+        ]
+    },
+    {
+        "id": "187a03193bff9acd",
+        "type": "ui_button",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "name": "",
+        "group": "d4c0e392bdd2dcbd",
+        "order": 5,
+        "width": 26,
+        "height": 2,
+        "passthru": false,
+        "label": "Capture Image",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SMILE",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "595ed0ecf9f52a0c"
+            ]
+        ]
+    },
+    {
+        "id": "aa709fd60fb04719",
+        "type": "ui_button",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "name": "",
+        "group": "d4c0e392bdd2dcbd",
+        "order": 6,
+        "width": 26,
+        "height": 1,
+        "passthru": false,
+        "label": "View Image",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "72463d2dc6a833fa"
+            ]
+        ]
+    },
+    {
+        "id": "d20c9ff0ec506be9",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "group": "",
+        "name": "RFID-1 Log",
+        "order": 2,
+        "width": "6",
+        "height": "16",
+        "format": "<h1>Event Log</h1>\n<div>\n<ul>\n <li ng-repeat=\"x in msg.payload\">\n <font color=\"red\"></font>\n    <ul>\n        <li>{{x.payload}}</li>\n    </ul>\n </li>\n</ul>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5c6fba64dd6dd24",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "group": "d4c0e392bdd2dcbd",
+        "name": "Image View",
+        "order": 4,
+        "width": 11,
+        "height": 8,
+        "format": "<img width=\"600\" height=\"400\" alt=\"Image not found\" src=\"data:image/png;base64,{{msg.payload}}\" />",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 650,
+        "y": 640,
+        "wires": [
+            [
+                "0fe8fd4978e1c24f"
+            ]
+        ]
+    },
+    {
+        "id": "5255418265539ade",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "group": "d4c0e392bdd2dcbd",
+        "name": "Image View",
+        "order": 3,
+        "width": 11,
+        "height": 8,
+        "format": "<img src=\"http://192.168.0.116\" width=\"600\" height=\"400\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90d2c579c928fe39",
+        "type": "base64",
+        "z": "66edd326e73c8ace",
+        "g": "1fe1c9e0a6a28436",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "f5c6fba64dd6dd24"
+            ]
+        ]
+    },
+    {
+        "id": "14fa0ca74412ca1c",
+        "type": "mysql",
+        "z": "66edd326e73c8ace",
+        "d": true,
+        "mydb": "34fee9ad31999730",
+        "name": "db mysql",
+        "x": 920,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85965edc.72971",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "group": "2a745e6b.07df92",
+        "name": "Dashboard Theme : Modern Dark",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "format": "<div>\n    <link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap\" rel=\"stylesheet\">\n    <style>\n        body {\n            --background: #212529;\n            --on-background: white;\n            --surface: #2d3136;\n            --on-surface: white;\n            --primary: var(--nr-dashboard-widgetColor);\n            --on-primary: white;\n            --secondary: var(--nr-dashboard-groupTextColor);\n            --accent: red;\n            --radius-s: 8px;\n            --font-weight-m: 300;\n            --font-weight-m: 500;\n            --font-weight-l: 700;\n            --space-s: 8px;\n            --space-m: 16px;\n            --space-l: 32px;\n        }\n\n        body.nr-dashboard-theme {\n            background-color: var(--background);\n            font-family: 'Montserrat', sans-serif;\n        }\n        .nr-dashboard-theme ui-card-panel {\n            background-color: var(--background);\n            border: 0;\n        }\n        .nr-dashboard-theme .nr-dashboard-button .md-button {\n            background-color: var(--primary);\n            border-radius: var(--radius-s);\n            padding: 8px !important;\n            line-height: inherit;\n            font-weight: var(--font-weight-l);\n            color: var(--on-primary);\n        }\n        .nr-dashboard-theme [ui-card-size=\"2x2\"].nr-dashboard-button .md-button {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            white-space: pre-line;\n        }\n        \n        .nr-dashboard-theme .nr-dashboard-button .md-button ui-icon {\n                margin-bottom: 8px;\n        }\n        .nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n            background-color: var(--secondary);\n        }\n        body.nr-dashboard-theme md-content md-card {\n            background-color: var(--surface);\n        }\n        md-card.md-default-theme, md-card {\n            border-radius: var(--radius-s);\n        }\n        .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n            font-weight: var(--font-weight-l) !important;      \n        }\n        .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n            font-weight: var(--font-weight-l);  \n            text-transform: capitalize;\n            color: var(--on-background);\n        }\n        .nr-dashboard-cardpanel > p {\n            margin-left: 0;\n            padding-left: 16px;\n        }\n        body.nr-dashboard-theme md-toolbar {\n            background-color: var(--surface);\n        }\n        .md-default-theme .md-datepicker-calendar, .md-datepicker-calendar,\n        .md-default-theme .md-calendar, .md-calendar{\n            background-color: var(--surface);\n            color: var(--on-surface);\n        }\n        .md-default-theme .md-datepicker-calendar-pane, .md-datepicker-calendar-pane{\n            border: 0;\n        }\n        .md-default-theme .md-calendar-month-label md-icon, .md-calendar-month-label md-icon, .md-default-theme .md-datepicker-input, .md-datepicker-input {\n            color: var(--on-surface);\n        }\n        body.nr-dashboard-theme md-content md-card {\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-numeric .value {\n            background-color: var(--surface);\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value, .nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value.md-select-placeholder {\n            color: var(--on-surface);\n            border-color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-dropdown .md-select-icon {\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-date-picker md-input-container .md-input {\n            color: var(--on-surface);\n            border-color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-date-picker .md-datepicker-triangle-button .md-datepicker-expand-triangle {\n            border-top-color: var(--on-surface);\n        }\n        body.nr-dashboard-theme md-sidenav {\n            background-color: var(--surface);\n        }\n        md-list-item._md-button-wrap > div.md-button:first-child, md-list-item .md-list-item-inner {\n            background-color: var(--surface);\n        }\n    </style>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1140,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-dashboard/ui_colour_picker.png",
+        "info": "# Modern Dark Theme for node-red-dashboard\n\nInspired by Victor Lucachi with his [Node Red Dashboard Concept](https://dribbble.com/shots/10356530-Node-Red-Dashboard-Concept) on Dribbble. Thank you for your work.\n\n## Customize\n\n1. Go on dashboard customisation tab (At the right of Debug Console).\n2. Select the style `Dark`.\n3. Pick the color you want. Example `#66B5F8`\n\n## Buttons\n\nUse `2x2` size for buttons with icon and text on the screenshot"
+    },
+    {
+        "id": "a17b0960d22265cb",
+        "type": "ui_slider",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "",
+        "label": "Entrance Servo",
+        "tooltip": "",
+        "group": "2a745e6b.07df92",
+        "order": 2,
+        "width": 8,
+        "height": 5,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae14f4ed46d9ce67",
+        "type": "ui_slider",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "",
+        "label": "Exit Servo",
+        "tooltip": "",
+        "group": "2a745e6b.07df92",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3b2feedea2f72bd",
+        "type": "ui_toast",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "msg.topic",
+        "name": "Entrance Gate",
+        "x": 280,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c3a58373abd4c7a2",
+        "type": "ui_toast",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "msg.topic",
+        "name": "Exit Gate",
+        "x": 260,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "75212b47caa3b373",
+        "type": "change",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "translate",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "opened",
+                "fromt": "str",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "closed",
+                "fromt": "str",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "a17b0960d22265cb"
+            ]
+        ]
+    },
+    {
+        "id": "f7579b4dc4cf9038",
+        "type": "change",
+        "z": "66edd326e73c8ace",
+        "g": "2fd923550de11b42",
+        "name": "translate",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "opened",
+                "fromt": "str",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "closed",
+                "fromt": "str",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "ae14f4ed46d9ce67"
+            ]
+        ]
+    },
+    {
+        "id": "7940dbd135d77f5c",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "group": "d4c0e392bdd2dcbd",
+        "name": "Dashboard Theme : Modern Dark",
+        "order": 1,
+        "width": 22,
+        "height": 1,
+        "format": "<div>\n    <link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap\" rel=\"stylesheet\">\n    <style>\n        body {\n            --background: #212529;\n            --on-background: white;\n            --surface: #2d3136;\n            --on-surface: white;\n            --primary: var(--nr-dashboard-widgetColor);\n            --on-primary: white;\n            --secondary: var(--nr-dashboard-groupTextColor);\n            --accent: red;\n            --radius-s: 8px;\n            --font-weight-m: 300;\n            --font-weight-m: 500;\n            --font-weight-l: 700;\n            --space-s: 8px;\n            --space-m: 16px;\n            --space-l: 32px;\n        }\n\n        body.nr-dashboard-theme {\n            background-color: var(--background);\n            font-family: 'Montserrat', sans-serif;\n        }\n        .nr-dashboard-theme ui-card-panel {\n            background-color: var(--background);\n            border: 0;\n        }\n        .nr-dashboard-theme .nr-dashboard-button .md-button {\n            background-color: var(--primary);\n            border-radius: var(--radius-s);\n            padding: 8px !important;\n            line-height: inherit;\n            font-weight: var(--font-weight-l);\n            color: var(--on-primary);\n        }\n        .nr-dashboard-theme [ui-card-size=\"2x2\"].nr-dashboard-button .md-button {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            white-space: pre-line;\n        }\n        \n        .nr-dashboard-theme .nr-dashboard-button .md-button ui-icon {\n                margin-bottom: 8px;\n        }\n        .nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n            background-color: var(--secondary);\n        }\n        body.nr-dashboard-theme md-content md-card {\n            background-color: var(--surface);\n        }\n        md-card.md-default-theme, md-card {\n            border-radius: var(--radius-s);\n        }\n        .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n            font-weight: var(--font-weight-l) !important;      \n        }\n        .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n            font-weight: var(--font-weight-l);  \n            text-transform: capitalize;\n            color: var(--on-background);\n        }\n        .nr-dashboard-cardpanel > p {\n            margin-left: 0;\n            padding-left: 16px;\n        }\n        body.nr-dashboard-theme md-toolbar {\n            background-color: var(--surface);\n        }\n        .md-default-theme .md-datepicker-calendar, .md-datepicker-calendar,\n        .md-default-theme .md-calendar, .md-calendar{\n            background-color: var(--surface);\n            color: var(--on-surface);\n        }\n        .md-default-theme .md-datepicker-calendar-pane, .md-datepicker-calendar-pane{\n            border: 0;\n        }\n        .md-default-theme .md-calendar-month-label md-icon, .md-calendar-month-label md-icon, .md-default-theme .md-datepicker-input, .md-datepicker-input {\n            color: var(--on-surface);\n        }\n        body.nr-dashboard-theme md-content md-card {\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-numeric .value {\n            background-color: var(--surface);\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value, .nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value.md-select-placeholder {\n            color: var(--on-surface);\n            border-color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-dropdown .md-select-icon {\n            color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-date-picker md-input-container .md-input {\n            color: var(--on-surface);\n            border-color: var(--on-surface);\n        }\n        .nr-dashboard-theme .nr-dashboard-date-picker .md-datepicker-triangle-button .md-datepicker-expand-triangle {\n            border-top-color: var(--on-surface);\n        }\n        body.nr-dashboard-theme md-sidenav {\n            background-color: var(--surface);\n        }\n        md-list-item._md-button-wrap > div.md-button:first-child, md-list-item .md-list-item-inner {\n            background-color: var(--surface);\n        }\n    </style>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1140,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-dashboard/ui_colour_picker.png",
+        "info": "# Modern Dark Theme for node-red-dashboard\n\nInspired by Victor Lucachi with his [Node Red Dashboard Concept](https://dribbble.com/shots/10356530-Node-Red-Dashboard-Concept) on Dribbble. Thank you for your work.\n\n## Customize\n\n1. Go on dashboard customisation tab (At the right of Debug Console).\n2. Select the style `Dark`.\n3. Pick the color you want. Example `#66B5F8`\n\n## Buttons\n\nUse `2x2` size for buttons with icon and text on the screenshot"
+    },
+    {
+        "id": "5dfd476b5993362e",
+        "type": "ui_template",
+        "z": "66edd326e73c8ace",
+        "g": "4f2d326610e85794",
+        "group": "d4c0e392bdd2dcbd",
+        "name": "Plate Recognizer",
+        "order": 2,
+        "width": 4,
+        "height": 9,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b450f622cbec864",
+        "type": "remote-access",
+        "z": "66edd326e73c8ace",
+        "confignode": "849688597643d56e",
+        "name": "",
+        "verbose": 0,
+        "x": 700,
+        "y": 320,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dfd668972df44c31",
+        "type": "remote-notification",
+        "z": "66edd326e73c8ace",
+        "confignode": "849688597643d56e",
+        "name": "",
+        "notificationTitle": "payload.title",
+        "notificationTitleType": "msg",
+        "notificationBody": "payload.body",
+        "notificationBodyType": "msg",
+        "notificationSound": "default",
+        "notificationSoundComputed": "payload.sound",
+        "notificationSoundComputedType": "msg",
+        "output": 1,
+        "x": 710,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    }
+]
